@@ -1,0 +1,21 @@
+:root {
+    --pry-clr: #E4B458;
+    --pry-clr-lg: #fcb62c; 
+    --pry-clr-drk: #A16F0D;
+    --sry-clr: #908E8E;
+    --sry-drk-cl: #070502;
+
+}
+
+.btn {
+    background-color: var(--pry-clr);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--pry-clr-lg);
+}
+
+.header-main {
+    color: var(--pry-clr);
+}
