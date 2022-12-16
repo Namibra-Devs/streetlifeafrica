@@ -33,13 +33,15 @@ img {
 }
 
 .about-info {
-    color: #ecebeb;
+    color: #eeecec;
 }
 
+.about-overflow {
+    overflow-x: hidden;
+}
 
-@media (prefers-color-sheme: white) {
-    body {
-        background-color: #908E8E;
-        color: #070502;
+@media (max-width: 480px) {
+    footer {
+        font-size: .85rem;
     }
 }
