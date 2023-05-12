@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/dist/output.css" />
+
+  <script src="/src/js/main.js" defer></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Oswald:wght@300;600;700&family=Source+Serif+Pro:wght@300;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <title>JM Street Life Africa</title>
+</head>
+
+<body class="font-source-serif">
+  <header class="bg-light-300 fixed mx-auto border-b-2 border-primary-100 top-0 z-50 w-full">
+
+    <nav class="navbar sticky flex items-center justify-between mx-auto lg:px-4 lg:py-2 py-4 lg:w-4/5 px-10 z-50">
+      <div class="logo font-extrabold text-darker-700 font-dm-sans"><a href="index.html">JM Street-Life Africa</a></div>
+      <div>
+        <ul class="hidden bg-light-300 h-screen lg:h-auto nav-list mx-auto lg:flex items-center justify-center text-primary-dark absolute px-3 lg:px-0 top-14 lg:relative lg:pt-0 space-y-2 lg:space-y-0 left-0 lg:top-auto lg:left-auto w-4/5 lg:w-auto bg-primary-100">
+          <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto font-semibold"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto font-semibold"><a href="" class="nav-link">Events</a>
+          <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto font-semibold"><a href="" class="nav-link">Gallery</a>
+          <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto font-semibold"><a href="" class="nav-link">Blog</a>
+          </li>
+          <a href="" class=" lg:ml-20 font-semibold text-light-300 bg-primary-clr px-4 py-2 rounded-full">Contact Us</a>
+        </ul>
+      </div>
+      <svg
+        class="bars outline-none border-none cursor-pointer lg:hidden flex items-center  justify-center z-50 w-6 h-6 text-dark-600"
+        aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <title>toggle Menu</title>
+        <path class="open-btn" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"></path>
+
+        <path class="close-btn hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+        stroke-linejoin="round" class="close-btn hidden text-primary-600"></path>
+      </svg>
+    </nav>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="hero-section mx-auto">
+    <div class="py-20 w-full mx-auto flex">
+      
+    </div>
+  </section>
+
+
+</body>
+
 </html>
