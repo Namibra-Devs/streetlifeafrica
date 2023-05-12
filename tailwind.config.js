@@ -10,6 +10,7 @@ module.exports = {
       'dm-sans'  : ['DM Sans', 'sans-serif'],
       'source-serif': ['Source Serif Pro', 'sans-serif'],
       'oswald': ['Oswald', 'sans-serif'],
+      'raleway': ['Raleway', 'sans-serif'],
       sans : ['Nunito', ...defaultTheme.fontFamily.sans],
       },
       colors: {
