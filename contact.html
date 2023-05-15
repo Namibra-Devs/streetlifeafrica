@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+
+    <script src="/src/js/main.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Oswald:wght@300;600;700&family=Raleway:wght@300;700&family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@300;600;700&display=swap"
+        rel="stylesheet">
+ 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>JM Street Life Studio</title>
+</head>
+
+<body class="font-dm-sans text-slate-800 bg-slate-100">
+    <header class="bg-light-300 text-slate-800 fixed mx-auto border-b-2 border-primary-100 top-0 z-50 w-full">
+
+        <nav class="navbar sticky flex items-center justify-between mx-auto lg:px-4 lg:py-2 py-4 lg:w-4/5 px-10 z-50">
+            <div class="logo font-extrabold text-darker-700 font-dm-sans"><a href="index.html">JM Street-Life Studio</a>
+            </div>
+            <div>
+                <ul
+                    class="hidden transition-all duration-500 bg-light-300 h-screen  lg:h-auto nav-list mx-auto lg:flex items-center justify-center text-slate-700 absolute px-4 lg:px-0 top-14 lg:relative lg:pt-0 space-y-2 lg:space-y-0 left-0 lg:top-auto lg:left-auto w-4/5 lg:w-auto bg-primary-100">
+                    <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto font-semibold"><a href="about.html"
+                            class="nav-link active">About Us</a></li>
+                    <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto font-semibold"><a href="events.html"
+                            class="nav-link">Events</a>
+                    <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto font-semibold"><a href="gallery.html"
+                            class="nav-link">Gallery</a>
+                    <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto font-semibold"><a href="blog.html"
+                            class="nav-link">Blog</a>
+                    </li>
+                    <div class="pt-5 px-3 lg:px-0 lg:pt-0">
+                        <a href="contact.html"
+                            class=" lg:ml-20 font-semibold text-light-300 bg-primary-clr px-4 py-2 rounded-full">Contact
+                            Us</a>
+                    </div>
+                </ul>
+            </div>
+            <svg class="bars outline-none border-none cursor-pointer lg:hidden flex items-center  justify-center z-50 w-6 h-6 text-primary-clr"
+                aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <title>toggle Menu</title>
+                <path class="open-btn" stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"></path>
+
+                <path class="close-btn hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12">
+                </path>
+                stroke-linejoin="round" class="close-btn hidden text-primary-600"></path>
+            </svg>
+        </nav>
+    </header>
+
+
+    <!-- Contact Section -->
+    <section class="py-10 text-slate-800">
+        <div class="w-4/5 py-20 mx-auto space-y-10"> 
+            <div class="space-y-5">
+            <h4 class="font-bold font-oswald uppercase lg:text-5xl text-[1.8rem] text-slate-800">CONTACT US</h4>
+            <p class="text-slate-800">Get in touch and let's bring your ideas to life.</p>
+        </div>
+        <div
+            class="lg:flex items-start justify-center lg:justify-between lg:space-x-10 space-y-10 lg:space-y-0">
+            <div class="lg:w-[40%] w-full lg:mr-10 space-y-6">
+                <h4 class="font-bold font-oswald uppercase lg:text-5xl text-[1.8rem] text-slate-800">Let's connect and
+                    make something amazing together.</h4>
+                <p class="text-slate-800">We would love to hear from you and are happy to answer any questions
+                    you may have about our services, events, or talent development programs.</p>
+                    <div class="pt-5 space-y-5">
+                    <p class="text-slate-800">No. 5 Liberation Road, Airport Residential Area, Accra, Greater Accra Region, Ghana.</p>
+                    <p class="pb-1 text-slate-800">+2338096542356</p>
+                    <a class="text-slate-800" href="mailto:hello@jmstreetlifestudios.com">hello@jmstreetlifestudios.com</a>
+            </div>
+        </div>
+
+            <div class="lg:w-1/2 w-full bg-dark-800 py-6 px-6 rounded-lg">
+                <!-- Form -->
+                <form action="" class="space-y-5">
+                    <div class="space-y-1">
+                        <label for="name" class="text-slate-100">Name</label>
+                        <input type="text" name="name" id="name"
+                            class="w-full border-2 border-slate-300 rounded-lg px-2 lg:px-5 py-2 lg:py-3 focus:border-2 focus:border-primary-clr outline-none">
+                    </div>
+                    <div class="space-y-1">
+                        <label for="email" class="text-slate-100">Email</label>
+                        <input type="email" name="email" id="email"
+                            class="w-full border-2 border-slate-300 rounded-lg px-2 lg:px-5 py-2 lg:py-3 focus:border-2 focus:border-primary-clr outline-none">
+                    </div>
+                    <div class="space-y-1">
+                        <label for="message" class="text-slate-100">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="5"
+                            class="w-full border-2 border-slate-300 rounded-lg px-2 lg:px-5 py-2 lg:py-3 focus:border-2 focus:border-primary-clr outline-none"></textarea>
+                    </div>
+                    <div class="space-y-1">
+                        <button type="submit"
+                            class="bg-primary-clr text-white rounded-full px-8 py-2 lg:py-3 flex items-center justify-center font-[600] w-full">Send
+                            Message</button>
+                </form>
+
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="md:pt-10 pt-5 md:px-10 bg-dark-800 text-slate-100">
+
+        <div class="mx-auto w-4/5">
+            <div class="md:flex justify-between items-start space-y-5 md:space-y-0 w-full">
+                <div class="space-y-3 md:w-1/4">
+                    <a href="" class="text-xl text-slate-100">JM Street-Life Studio</a>
+                    <p class="text-sm">Creating unforgettable experiences that celebrate African culture and bring
+                        people
+                        together.</p>
+                    <p class="pb-1">+2338096542356</p>
+                    <a href="mailto:hello@jmstreetlifestudios.com">hello@jmstreetlifestudios.com</a>
+                    <div class="socials flex space-x-10 md:space-x-6 pt-2 py-5 md:py-0">
+                        <a href="" class="hover:text-primary-clr w-5 h-5 text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="" class="hover:text-primary-clr w-5 h-5 text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="hover:text-primary-clr w-5 h-5 text-xl"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="" class="hover:text-primary-clr w-5 h-5 text-xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="md:space-y-4 space-y-2">
+                    <h4 class="text-xl text-slate-100 font-oswald font-bold pb-4 md:pb-2">Quick Links</h4>
+                    <a href="index.html" class="block">Home</a>
+                    <a href="about.html" class="block">About Us</a>
+                    <a href="events.html" class="block">Events</a>
+                    <a href="gallery.html" class="block">Gallery</a>
+                    <a href="blog.html" class="block">Blog</a>
+                </div>
+
+                <div class="space-y-5">
+                    <h4 class="text-xl text-slate-100 font-oswald font-bold">Instagram Feed</h4>
+                    <div class="grid grid-cols-3 gap-1 w-[40%] md:w-full">
+                        <img class="w-16 h-12" src="/assets/imgs/hero-img.jpg" alt="">
+                        <img class="w-16 h-12" src="/assets/imgs/hero-img.jpg" alt="">
+                        <img class="w-16 h-12" src="/assets/imgs/hero-img.jpg" alt="">
+                        <img class="w-16 h-12" src="/assets/imgs/hero-img.jpg" alt="">
+                        <img class="w-16 h-12" src="/assets/imgs/hero-img.jpg" alt="">
+                        <img class="w-16 h-12" src="/assets/imgs/hero-img.jpg" alt="">
+                        <img class="w-16 h-12" src="/assets/imgs/hero-img.jpg" alt="">
+                        <img class="w-16 h-12" src="/assets/imgs/hero-img.jpg" alt="">
+                        <img class="w-16 h-12" src="/assets/imgs/hero-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-sm border-t-2 border-primary-clr-100 mt-10 py-6">
+                &copy; JM Street-Life Studio
+                <span id="copyright">
+                    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
