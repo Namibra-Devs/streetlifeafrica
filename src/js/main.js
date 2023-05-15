@@ -34,5 +34,21 @@ window.document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+//   Display the about text
+    const about = document.querySelector('.show-aboout');
+    const aboutText = document.querySelectorAll('.about-text');
 
+    // Show the about text when clicking on the about button and hide the other text
+    // about.addEventListener('click', () => {
+    //     aboutText.forEach((text) => {
+    //         text.classList.toggle('hidden');
+    //     });
+    // });
+
+    // Show the about text when clicking on the about button and hide the other text
+    for (let i = 0; i < aboutText.length; i++) {
+        about.addEventListener('click', () => {
+            aboutText[i].classList.toggle('hidden');
+        });
+    }
 });
