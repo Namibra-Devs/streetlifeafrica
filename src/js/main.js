@@ -8,9 +8,10 @@ window.document.addEventListener('DOMContentLoaded', () => {
 
   bars.addEventListener('click', () => {
       menu.classList.toggle('hidden');
+      menu.style = 'transition: all 0.5s ease-in-out;'
       open.classList.toggle('hidden');
       close.classList.toggle('hidden');
-
+    
       // close menu when clicking on a link
       const links = document.querySelectorAll('.nav-list a', '.nav-below a');
       links.forEach((link) => {
