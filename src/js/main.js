@@ -15,10 +15,11 @@ window.document.addEventListener('DOMContentLoaded', () => {
         // close menu when clicking on a link
         const links = document.querySelectorAll('.nav-list a');
         links.forEach((link) => {
-            link.addEventListener('click', () => {
+            link.addEventListener('click', (e) => {
                 menu.classList.add('hidden');
                 open.classList.remove('hidden');
                 close.classList.add('hidden');
+
             });
         });
 
@@ -33,6 +34,15 @@ window.document.addEventListener('DOMContentLoaded', () => {
         });
 
 
+    });
+
+    // Add border bottom to nav-link when clicked and keep active if still active
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(navLink => {
+        navLink.addEventListener('click', function () {
+            navLinks.forEach(navLink => navLink.classList.remove('active'));
+            this.classList.add('active');
+        });
     });
 
 

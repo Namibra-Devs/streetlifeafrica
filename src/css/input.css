@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.active {
-    @apply border-b-2 border-slate-600 transition-all duration-500 ease-in-out;
+
+.nav-link.active {
+    @apply border-b-2 border-slate-600;
 }
