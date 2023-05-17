@@ -15,16 +15,12 @@ window.document.addEventListener('DOMContentLoaded', () => {
         // close menu when clicking on a link
         const links = document.querySelectorAll('.nav-list a');
         links.forEach((link) => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault();
+            link.addEventListener('click', () => {
                 menu.classList.add('hidden');
                 open.classList.remove('hidden');
                 close.classList.add('hidden'); 
-
             });
         });
-
-
 
         // close menu when clicking outside
         window.addEventListener('click', (e) => {
@@ -35,21 +31,19 @@ window.document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-
     });
 
+// Adding border bottom to active link
+    const links = document.querySelectorAll('.nav-list a');
+    links.forEach((link) => {
+        link.addEventListener('click', (event) => {
+            links.forEach((link) => {
+                link.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        });
+    });
 
-    // Add border bottom to nav-link when clicked and keep active if still active
-//  const navLinks = document.querySelectorAll('.nav-link');
-// navLinks.forEach(navLink => {
-//     navLink.addEventListener('click', function (event) {
-//         event.preventDefault();
-//         navLinks.forEach(navLink => {
-//             navLink.classList.remove('active');
-//             this.classList.add('active');
-//         });
-//     });
-// });
 
     //   Display the about text
     const about = document.querySelectorAll('.show-aboout');
