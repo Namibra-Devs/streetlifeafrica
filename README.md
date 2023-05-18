@@ -8,3 +8,6 @@
 5. You will be once again asked to install <a href="https://tailwindcss.com/docs/installation">Tailwind CSS</a>
 6. Press y/Y to continue
 7. Now follow the [localhost:5173](http://localhost:5173/) to run the website locally
+
+
+The Back end uses PHP
