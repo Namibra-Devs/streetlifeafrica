@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 
-/* .nav-link.active {
+.nav-link.active {
     @apply border-b-2 border-slate-600 z-0;
-} */
+}
